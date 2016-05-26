@@ -22,6 +22,16 @@ body {
     opacity: .9;
 }
 
+.iceberg,
+.titanic,
+.jack,
+.rose {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    transition: transform 2s ease-in-out;
+    transform-origin: bottom;
+}
+
 .iceberg {
     background-image: url(iceberg.png);
     position: absolute;
@@ -56,4 +66,29 @@ body {
     height: 128px;
     right: 0;
     bottom: 200px;
+}
+
+.sail {
+    transform: translate3d(-515px,0,0);
+}
+
+.sail.tilt {
+    transform: translate3d(-515px,0,0) rotateZ(45deg);
+}
+
+.jack.sail.float {
+    transform: translate3d(-375px,60px,0);
+    transform-origin: center;
+}
+
+.rose.sail.float {
+    transform: translate3d(-355px,60px,0);
+}
+
+.titanic.sail.tilt.drown {
+    transform: translate3d(-500px,200px,0);
+}
+
+.jack.sail.float.drown {
+    transform: translate3d(-370px,260px,0) rotateZ(90deg);
 }
