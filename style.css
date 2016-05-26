@@ -1,0 +1,59 @@
+body {
+    background: #444;
+}
+
+.screen {
+    background: #eee;
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 1px solid #999;
+    position: relative;
+}
+
+.ocean {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: skyblue;
+    opacity: .9;
+}
+
+.iceberg {
+    background-image: url(iceberg.png);
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: 0;
+    bottom: 25px;
+}
+
+.titanic {
+    background-image: url(titanic.png);
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    right: 0;
+    bottom: 200px;
+}
+
+.jack {
+    background-image: url(jack.png);
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    right: 0;
+    bottom: 200px;
+}
+
+.rose {
+    background-image: url(rose.png);
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    right: 0;
+    bottom: 200px;
+}
