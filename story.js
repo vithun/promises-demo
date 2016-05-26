@@ -4,14 +4,10 @@ var rose = new Passenger(document.querySelector('.rose'));
 
 
 function story() {
-    titanic.addPassenger(jack, function () {
-        titanic.addPassenger(rose, function () {
-            titanic.sail(function () {
-                titanic.tilt(function () {
-                    titanic.drown();
-                    jack.drown();
-                });
-            });
-        });
-    });
+    Q.all([titanic.addPassenger(jack), titanic.addPassenger(rose)])
+        .then(function () { return titanic.sail(); })
+        .then(function () { return titanic.tilt(); })
+        .then(function () { return titanic.drown(); })
+        .then(function () { return jack.drown(); })
+        .catch(function (error) { console.error(error); });
 }

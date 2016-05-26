@@ -43,7 +43,6 @@ Ship.prototype.drown = function () {
     var deferred = Q.defer();
     
     this.element.addEventListener('transitionend', function () { deferred.resolve(); });
-    this.element.addEventListener('transitionend', callback);
     this.element.classList.add('drown');
     
     return deferred.promise;
