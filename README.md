@@ -52,7 +52,7 @@ titanic.drown();
 jack.drown();
 ```
 
-Each of those lines combine and together enact the story of Titanic. Now try running them together in a single line:
+Each of those lines combine and together enact the story of Titanic. Now refresh the browser and try running them together in a single line:
 
 ```js
 titanic.addPassenger(jack);titanic.addPassenger(rose);titanic.sail();titanic.tilt();titanic.drown();jack.drown();
@@ -82,6 +82,8 @@ story();
 
 You should see the story play out as expected.
 
+[Code comparison between Step 1 and Step 2](https://github.com/vithun/promises-demo/compare/step-1...step-2)
+
 ## Promises
 
 Promises also provide a way of handling asynchronous behaviour but do it in a more elegant way compared to callbacks. The [HTML5 Rocks link](http://www.html5rocks.com/en/tutorials/es6/promises/) is a good page to start learning about promises. Go read this now and try to make some sense out of it. It's ok if you don't understand it completely, that should change at the end of this exercise.
@@ -104,3 +106,5 @@ Try running the story in your browser, and it should still work. Now with some c
 ```js
 story();
 ```
+
+[Code comparison between Step 2 and Step 3](https://github.com/vithun/promises-demo/compare/step-2...step-3)
